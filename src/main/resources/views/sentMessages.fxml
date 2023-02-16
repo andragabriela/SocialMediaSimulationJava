@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.SentController">
+   <children>
+      <TableView fx:id="tableMessages" prefHeight="404.0" prefWidth="508.0">
+         <columns>
+            <TableColumn fx:id="fromFirstName" prefWidth="94.0" text="ToFirstName" />
+            <TableColumn fx:id="fromLastName" minWidth="1.33331298828125" prefWidth="98.66665649414062" text="ToLastName" />
+            <TableColumn fx:id="message" prefWidth="126.0" text="Message" />
+            <TableColumn fx:id="datacolumn" prefWidth="92.6666259765625" text="Data" />
+            <TableColumn fx:id="statusCoulmn" prefWidth="112.00006103515625" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="534.0" layoutY="355.0" onAction="#handleDelete" mnemonicParsing="false" text="Delete" />
+   </children>
+</AnchorPane>

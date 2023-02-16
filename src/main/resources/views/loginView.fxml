@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.LoginController">
+   <children>
+      <GridPane fx:id="gridLayout" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="587.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="122.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" percentWidth="20.0" prefWidth="135.5" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="544.0" minWidth="10.0" percentWidth="80.0" prefWidth="444.5" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="145.5" minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="228.5" minHeight="10.0" prefHeight="85.66667683919269" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="233.5" minHeight="10.0" prefHeight="85.66665649414062" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="66.0" text="First Name:" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <TextField fx:id="firstNameField" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="38.0" prefWidth="60.0" text="Last Name:" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label prefHeight="36.0" prefWidth="42.0" text="Email:" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+      <Button fx:id="logInBtn" layoutX="319.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="40.0" prefWidth="104.0" text="Log in" textFill="#141414" AnchorPane.rightAnchor="177.0" />
+      <Button fx:id="signInBtn" layoutX="449.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="38.0" prefWidth="104.0" text="Sign In" />
+      <Label layoutX="201.0" layoutY="31.0" prefHeight="81.0" prefWidth="248.0" text="           Talkative" textAlignment="CENTER" textFill="#db0f72">
+         <font>
+            <Font name="Book Antiqua Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
